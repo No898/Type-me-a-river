@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="./styles.less" />
+
+    <title>Typing Books</title>
+</head>
+<body>
+    <div id="raceTrack">
+			<div class="racer" id="you">
+				<div class="progress"></div>
+			</div>
+		</div>
+
+		<div id="currentText"></div>
+        
+		<div id="inputArea">
+			<input id="typeInput" type="text" >
+		</div>
+        <div class="center">
+            <div class="info" id="timerHolder"><span id="timer">0.0</span> <span>sec</span></div>
+            <div class="info"><span id="speed">0</span><span> cpm  (char/min)</span></div>
+        </div>
+
+
+        <form id="text-form" class="rightSided">
+            <input class="info rightSided"type="submit" value="Vložit text"><br>
+            <input class="info inputText" type="text" name="book" placeholder="Text ke psaní">
+        </form>
+        
+        
+        <form >
+                <input id="refresh" class="info " type="submit" value="Refresh">
+        </form>
+
+        <h3>Text na zkoušku překopírujte -></h3>
+        <span>Byl jednou jeden rybník. Nebyl to však jen tak obyčejný rybník. Byl to rybník zázračný, protože v něm bydleli vodníci. Celá rodina. Taťka, máma a čtyři malá vodníčata. Nikdo o nich ale nevěděl, protože přes den spali a vycházeli až v noci, když byl na obloze měsíc a hvězdy. Tedy až na nejmladšího vodníčka.
+
+        </span>
+        
+         
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script>
+        <script src="/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+
+</body>
+</html>
