@@ -1,27 +1,18 @@
 
 document.querySelector("#text-form").addEventListener("submit", function(event){
-    
 
-    // přístup k obsahu inputu
-    
+    // Input
     const bookValue = event.target.elements.book.value
     localStorage.setItem("Book", bookValue)
 
-
-    // po odeslání vymaže obsaqh políčka
+    // Reset the text
     event.target.elements.book.value = ""
 })
+    // Refresh the text 
 document.querySelector("#refresh").addEventListener("submit", function(event){
-    
-
-    // přístup k obsahu inputu
     
     const bookValue = event.target.elements.book.value
     localStorage.setItem("Book", bookValue)
-
-
-    // po odeslání vymaže obsaqh políčka
-    
 })
 const bookIsOut = localStorage.getItem("Book");
 
@@ -103,7 +94,7 @@ function onKeydown() {
         charSpeed();
         firstKeyDown = false;
     }
-    // counting correct characters
+    // Counting correct characters
     currentCharacterCount = 0;
     for (var i = 0; i < $typeInput.val().length; i++) {
         if (currentWord[i] == $typeInput.val()[i]) {
@@ -120,7 +111,7 @@ function onKeydown() {
         $spanArray.eq(wordProgress).children().eq(i).addClass('charWrong');
     }
 
-    // progress handler
+    // Progress handler
     if (wordProgress < currentText.length) {
         if ($typeInput.val() == currentWord + " ") {
             wordProgress++;
@@ -154,7 +145,7 @@ function onKeydown() {
 }
 
 
-// counting seconds
+        // Counting seconds
 function updateTimer() {
     timerInterval = setInterval(function() {
         relativeTime++
